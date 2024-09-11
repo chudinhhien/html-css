@@ -1,0 +1,154 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  width: 100%;
+  padding: 0 160px;
+}
+
+.header--scrolled {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu--item {
+  margin-right: 35px;
+}
+
+.menu--item a {
+  padding: 30px 0;
+  font-size: 14px;
+  color: #433246;
+  position: relative;
+}
+
+.menu--item a::before {
+  content: "";
+  display: block;
+  height: 6px;
+  width: 60%;
+  left: 50%;
+  border-radius: 5px;
+  background-color: #c01111;
+  position: absolute;
+  transform: translateX(-50%) translateY(-100%);
+  transition: transform .3s ease, opacity .3s ease;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50px);
+}
+
+
+.menu--item-active a {
+  color: #c01111;
+}
+
+.menu--item-active a::before {
+  transform: translateX(-50%) translateY(-25px);
+  opacity: 1;
+  transition: none;
+}
+
+.header--logo {
+  padding: 10px;
+  margin-right: 125px;
+}
+
+.header--logo img {
+  max-height: 80px;
+  width: 125px;
+  padding: 10px 0;
+}
+
+.header--language .language {
+  display: flex;
+}
+
+.language--item a {
+  padding: 0 6px;
+  font-size: 14px;
+  color: #949ba4;
+}
+
+.language--item-active a {
+  color: #c01111;
+  font-weight: 600;
+  border: 1px solid #c01111;
+  border-radius: 4px;
+  padding: 1px 13px;
+}
+
+.video {
+  padding-top: 100px;
+  width: 100vw;
+  height: 615px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video video {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.business--title {
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+
+.business--description {
+  width: 50%;
+  padding-left: 70px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  line-height: 1.8;
+  color: #2b3441;
+  font-size: 16px;
+}
+
+.business--intro {
+  border: 6px solid #f9f9f9;
+  border-radius: 16px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.business--image {
+  transform: translateY(3px);
+}
+
+.business--image img {
+  height: 561.76px;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  object-fit: contain;
+}
+
+.business--description::before {
+  content: '';
+  border: 6px solid #f9f9f9;
+  border-radius: 16px;
+  position: absolute;
+  width: 110px;
+  height: calc(100% - 80px);
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
