@@ -331,3 +331,208 @@
 }
 
 /* End Service */
+
+
+/* Project */
+
+.project {
+  margin-top: 150px;
+  position: relative;
+}
+
+
+.project::before {
+  content: '';
+  width: 71px;
+  height: 71px;
+  border-radius: 50%;
+  background-color: #ffeff0;
+  position: absolute;
+  right: -90px;
+  bottom: -40px;
+}
+
+.project--content {
+  display: flex;
+  line-height: 1.8;
+}
+
+.project--header {
+  position: relative;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.project--header::before {
+  content: '';
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #c01111;
+  position: absolute;
+  right: 32%;
+  top: -25px;
+  transform: translateY(-50%);
+}
+
+
+.project--header::after {
+  content: '';
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: rgba(192, 17, 17, .1);
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+}
+
+.project--counter {
+  width: 55%;
+}
+
+
+.counter--item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 60px;
+}
+
+.counter--number {
+  color: #c01111;
+  font-size: 112px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.counter--desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.counter--label {
+  color: #c01111;
+  font-size: 48px;
+  font-weight: 700;
+  padding-left: 50px;
+}
+
+.counter--title {
+  font-size: 24px;
+  padding-left: 50px;
+  color: #4D5969;
+}
+
+.project .service--button {
+  width: 75%;
+  border-radius: 7px;
+}
+
+
+.project--carousel {
+  margin-top: 67px;
+  margin-left: 70px;
+}
+
+.project--carousel-item {
+  position: relative;
+  width: 322px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project--carousel-item img {
+  height: auto;
+  max-width: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  border-radius: 8px;
+}
+
+.project--carousel-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(249, 249, 249, .9);
+}
+
+.project--carousel-content {
+  position: absolute;
+  bottom: 38px;
+  left: 20px;
+  padding: 14px;
+}
+
+.project--carousel-subtitle {
+  font-size: 13px;
+  color: #4D5969;
+}
+
+.project--carousel-title {
+  font-size: #2b3441;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0px 15px;
+}
+
+.project--carousel-desc {
+  font-size: 14px;
+  color: #4D5969;
+  margin-bottom: 20px;
+}
+
+.btn--content {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #c01111;
+}
+
+.btn--title {
+  font-weight: 700;
+}
+
+.btn--icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: rgba(192, 17, 17, .1);
+  line-height: 24px;
+  text-align: center;
+}
+
+
+.project--carousel-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.project--carousel-btn--item {
+  display: flex;
+  background-color: rgba(148, 155, 164, .1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 25px;
+  color: #949ba4;
+}
+
+
+.project--carousel-btn--item:first-child {
+  margin-left: 200px;
+}
+
+
+/* End Project */
