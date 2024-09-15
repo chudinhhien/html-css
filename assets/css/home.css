@@ -904,3 +904,164 @@
 }
 
 /* End Culture-Event */
+
+
+/* Footer */
+footer {
+  margin-top: 100px;
+  padding-top: 60px;
+  background-color: #f7f7f7;
+}
+
+.footer--about {
+  display: flex;
+}
+
+.footer--about-item {
+  width: calc( 100% / 4 );
+}
+
+.footer--about-image img{
+  max-height: 51px;
+  max-width: 100%;
+}
+
+.footer--about-item--title {
+  color: #4d5969;
+  font-size: 18px;
+  position: relative;
+  z-index: 0;
+  font-weight: 700;
+  margin-bottom: 36px;
+}
+
+.footer--about-item--title::before {
+  content: '';
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  background-color: #e4e4e4;
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.footer--about-item--sub-title li {
+  color: #949ba4;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.footer--about-item--sub-title li :hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer--address {
+  display: flex;
+}
+
+.footer--address-item {
+  width: calc( 100% / 4 );
+}
+
+.footer--address-office {
+  width: calc( 100% / 2 );
+}
+
+.footer--hozon {
+  border: #e4e4e4 solid 1px;
+}
+
+.footer--social {
+  display: flex;
+  align-items: center;
+}
+
+
+.footer--copyright {
+  width: 49.337%;
+}
+
+.footer--icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.footer--copyright li {
+  margin-bottom: 5px;
+  padding: 10px;
+  font-size: 14px;
+  color: #949ba4;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.footer--social-sun {
+  width: 50%;
+}
+
+.footer--social-sun ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer--social-sun--news {
+  width: 60px;
+  height: 20px;
+}
+
+.footer--social-sun ul li {
+  background-color: #949ba4;
+  border-radius: 8px;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 24px;
+}
+
+.footer--social-sun ul li:last-child {
+  background-color: #fff;
+  width: auto;
+  padding: 0 8px;
+}
+
+.footer--social-sun--news img{
+  width: 60px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.btn-wrap {
+  position: fixed;
+  right: 24px;
+  bottom: 124px;
+  border: 8px solid #f9f9f9;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.btn--join-us {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 13px;
+  background-color: #c01111;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+}
+/* End Footer */
