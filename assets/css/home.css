@@ -93,7 +93,6 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -1048,6 +1047,7 @@ footer {
   border: 8px solid #f9f9f9;
   padding: 0;
   border-radius: 50%;
+  z-index: 9;
 }
 
 .btn--join-us {
@@ -1064,4 +1064,359 @@ footer {
   color: #fff;
   font-weight: 700;
 }
+
+.header--menu-toogle {
+  display: none;
+}
+
+.video-moblie {
+  display: none;
+}
 /* End Footer */
+
+
+/* Responsive Moblie */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 10px;  /* Giảm padding để nội dung không bị quá chật trên màn hình nhỏ */
+  }
+  
+  .header {
+    padding: 0;
+    max-width: 768px;
+    justify-content: unset;
+  }
+
+  .header--logo {
+    height: auto;
+    width: 60%;
+    margin-right: 0;
+  }
+
+  .header--menu-toogle {
+    width: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    padding: .25em;
+    cursor: pointer;
+    border: 0 solid;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, .05);
+    color: #494c4f;
+    margin-right: 15px;
+  }
+
+  .header--menu {
+    display: none;
+  }
+
+
+  .header--language {
+    width: 20%;
+    margin-left: 21px;
+  }
+
+  .video-desktop {
+    display: none;
+  }
+
+  .video-moblie {
+    display: block; /* Hiển thị video cho mobile */
+    width: 100%;    /* Video sẽ chiếm toàn bộ chiều rộng màn hình */
+    height: 375px;
+  }
+
+  .video {
+    position: relative;
+    padding-bottom: 147%;
+    overflow: hidden;
+  }
+  .video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .business {
+    margin-top: -70px;
+  }
+
+  .business--title {
+    font-size: 24px;
+    margin-bottom: 23px;
+  }
+
+  .business--intro {
+    display: block; /* Chuyển từ flex sang block để xếp theo cột */
+    text-align: center; /* Canh giữa cho nội dung */
+    padding: 20px;
+  }
+
+  .business--description {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .business--image {
+    width: 100%; /* Hình ảnh cũng chiếm toàn bộ chiều rộng */
+    margin: 0 auto; /* Canh giữa hình ảnh */
+  }
+
+  .business--image img {
+    width: 100%; /* Đảm bảo hình ảnh co giãn theo chiều rộng */
+    height: auto;
+    object-fit: cover; /* Đảm bảo ảnh giữ được tỷ lệ khi thay đổi kích thước */
+  }
+
+  .service ul {
+    display: block; /* Sắp xếp các item theo chiều dọc */
+  }
+
+  .service--item {
+    width: 100%; /* Mỗi item chiếm toàn bộ chiều rộng */
+    margin-bottom: 20px; /* Thêm khoảng cách giữa các item */
+  }
+
+  .service--item:first-child {
+    margin-right: 0;
+  }
+
+  .service--item:last-child {
+    margin-left: 0;
+  }
+
+  .service--item:last-child::before {
+    right: 20px;
+    bottom: 130px;
+    transform: none;
+  }
+  
+  .service--button {
+    width: 100%; /* Đảm bảo nút bấm chiếm toàn bộ chiều rộng trong mobile */
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    margin: auto;
+  }
+
+  .button-icon {
+    margin-left: 8px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .project {
+    margin-top: 80px;
+  }
+
+  .project--header h2 {
+    font-size: 24px;
+  }
+
+  .project--content {
+    display: block; /* Chuyển từ flex sang block để sắp xếp dọc */
+    padding: 20px;
+  }
+
+  .project--counter, .project--carousel {
+    width: 100%; /* Chiếm toàn bộ chiều rộng màn hình */
+    margin-left: 0; /* Loại bỏ margin để giữ mọi thứ gọn gàng */
+  }
+
+  .counter--item {
+    margin-bottom: 30px; /* Giảm khoảng cách giữa các item */
+  }
+
+  .counter--number {
+    font-size: 60px; /* Điều chỉnh kích thước font cho phù hợp với màn hình nhỏ */
+  }
+
+  .counter--label {
+    font-size: 24px;
+  }
+
+  .counter--title {
+    font-size: 16px;
+  }
+
+  .project--carousel-item {
+    width: 100%; /* Chiếm toàn bộ chiều rộng của màn hình nhỏ */
+    margin-bottom: 20px;
+  }
+
+  .project--carousel-content {
+    padding: 10px;
+  }
+
+  .btn--content {
+    justify-content: center;
+  }
+
+  .project--carousel-btn--item {
+    margin-left: 0;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .project::before {
+    content: none;
+  }
+
+  .career-intro--title {
+    font-size: 32px;
+  }
+
+  .career-intro--description {
+    font-size: 18px;
+  }
+
+  .career-intro--sub-description {
+    font-size: 14px;
+  }
+
+  .working-environment--body {
+    display: block; /* Sắp xếp các phần tử theo chiều dọc */
+  }
+
+  .working-environment--title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .working-environment--content {
+    width: 100%; /* Chiếm toàn bộ chiều rộng màn hình */
+    margin-right: 0;
+    margin-bottom: 30px; /* Thêm khoảng cách giữa các phần tử */
+  }
+
+  .working-environment--btn.service--button{
+    width: 73%;
+  }
+  .working-environment--banner {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+  }
+
+  .working-environment--content-description {
+    font-size: 15px; /* Điều chỉnh kích thước font để phù hợp với màn hình nhỏ */
+    line-height: 1.5;
+  }
+
+  .working-environment--content-icon {
+    height: 32px;
+    width: 32px;
+    margin-right: 55px;
+  }
+
+  .culture-event--body {
+    overflow: hidden;
+  }
+
+  .culture-event--title {
+    font-size: 24px;
+  }
+
+  .culture-event--item {
+    min-width: 100%;
+    margin: 20px 0;
+  }
+
+  .culture-event--item-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .culture-event--item-title {
+    font-size: 18px;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .culture-event--item-detail {
+    justify-content: center; /* Canh giữa nút "Xem chi tiết" */
+  }
+
+  .carousel--btn {
+    display: none; /* Ẩn nút chuyển slide trên mobile */
+  }
+
+  .culture-event--btn {
+    width: 100%; /* Nút "Xem nhiều tin hơn" chiếm toàn bộ chiều rộng */
+    margin-top: 30px;
+  }
+
+  @keyframes slider {
+    0% { transform: translateX(0%); } 
+    10% { transform: translateX(0%); }
+    
+    15% { transform: translateX(-100%); }
+    25% { transform: translateX(-100%); } 
+  
+    30% { transform: translateX(-200%); }
+    40% { transform: translateX(-200%); }
+    
+    45% { transform: translateX(-300%); }
+    55% { transform: translateX(-300%); }
+  
+    60% { transform: translateX(-400%); }
+    70% { transform: translateX(-400%); }
+    
+    75% { transform: translateX(-500%); }
+    85% { transform: translateX(-500%); } 
+    
+    90% { transform: translateX(-600%); }
+    100% { transform: translateX(-600%); }
+  }
+
+  .footer--about {
+    display: block;
+  }
+
+  .footer--about-item {
+    width: 100%;
+  }
+
+  .footer--address {
+    flex-wrap: wrap;
+  }
+
+  .footer--address-item {
+    display: none;
+  }
+
+  .footer--address-item.footer--address-contact {
+    display: inline;
+    width: 100%;
+  }
+
+  .footer--address-item.footer--address-office {
+    display: inline;
+    width: 100%;
+  }
+
+  .footer--copyright {
+    width: 88.337%;
+  }
+
+  .footer--social {
+    flex-wrap: wrap;
+  }
+
+  .footer--social-sun {
+    width: 100%;
+  }
+
+  .footer--social-sun ul {
+    justify-content: flex-start;
+  }
+  .footer--about-image.footer--about-item img {
+    margin-bottom: 30px;
+  }
+}
+
+/* End Responsive Moblie */
